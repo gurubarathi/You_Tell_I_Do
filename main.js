@@ -267,13 +267,12 @@ let tabless=document.getElementById("tab");
     var Input,valuE;
     function putAns(td){
         selectedRow = td.parentElement.parentElement;
-        let questioN = selectedRow.cells[1].innerHTML;
-        let A = Quizes.find(e=>{if(e.ques==questioN)e.ques})
-        console.log(A);
+        var questioN = selectedRow.cells[1].innerHTML;
+        var Eval=eval(questioN);
+        console.log(Eval);
         Input=selectedRow.cells[2].childNodes[0];
         valuE=Input.value;
-
-        if(A == valuE){
+        if(Eval == valuE){
             alert(' your ans is correct '+valuE);
         }
         else{
@@ -283,6 +282,10 @@ let tabless=document.getElementById("tab");
     }
     function getAns(td){
         selectedRow = td.parentElement.parentElement;
+        var questioN = selectedRow.cells[1].innerHTML;
+        var Eval=eval(questioN);
+        alert("the Answer is "+Eval);
+        Input.value='';
     }
 /***********************Calculator Function****************************/
 function expression(number, operation){

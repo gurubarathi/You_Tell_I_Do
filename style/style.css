@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.3px;
+}
+.displayNone{
+    display:none;
+}
+.displayBlock{
+    display: block;
+}
+.logo{
+    width:100%;
+    height:3rem;
+}
+.logo2{
+    width:100%;
+    height:3rem;
+}
+nav{
+ height:10vh;
+ box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+.nameZ{
+    font-size:20px;
+    font-weight: bold;
+}
+.MP{
+    height:90vh;
+    background-color: #726866;
+}
+.schImg{
+    width:100%;
+}
+.d-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+/******************MainPage*******************/
+.mainPage{
+    background-color:#b6b670;
+}
+.CC{
+    justify-content: center;
+    align-items: center;
+    font-size:64px;
+}
+.relat{
+    display: block;
+    position:relative;
+}
+.relat-p{
+    position: absolute;
+    top: 226px;
+    left: 72px;
+    z-index: 2;
+    width: 219px;
+    
+}
+/******************SignIn *******************/
+.log_form,.sign_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: #1c2e4f;
+    color: #726866;
+    font-size: large;
+}
+
+.loginForm,.signinForm{
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 1.2rem;
+}
+.signinForm{
+    padding:0px 30px;
+    
+}
+.loginForm input,.signinForm input{
+   display:block;
+   padding:5px 10px;
+   border-radius: 5px;
+   border:1px solid rgb(132, 197, 240);
+   margin:20px 0;
+   width:100%;
+
+}
+.loginForm input:focus,.signinForm input:focus{
+    border:none;
+    outline:1px solid rgb(186, 214, 110);
+   
+}
+.loginForm button,.signinForm button{
+    color:#726866;
+    width:100%;
+    background-color:#fcdbb6 ;
+    padding:5px  20px;
+    font-size: 1.2rem;
+    border:none;
+    margin: 20px 0px;
+    border-radius: 5px;
+}
+.inner_container h2{
+    text-align: center;
+    margin:20px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.uimg{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0;
+}
+.uimg img{
+   width:10%;
+}
+.bottomL{
+    display: flex;
+    justify-content: space-between; 
+    padding: 30px;
+}
+.bottomL button{
+    background-color: transparent;
+    border:none;
+    color:#726866;
+    text-decoration: underline;
+    font-size: medium;
+}
+button{
+    background-color: transparent;
+    border:1px solid rgba(0,0,0,0.9);
+    color:#d07465;
+    text-decoration: underline;
+    font-size: medium;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+.dff{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+

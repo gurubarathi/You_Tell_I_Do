@@ -43,7 +43,7 @@ const sEmail=document.getElementById("email");
 const sPassword=document.getElementById("spassword");
 const cPassword=document.getElementById("cpassword");
 
-function signUpMaster(){
+function signUp(){
     newUSer.name=sName.value;
     newUSer.email=sEmail.value;
     newUSer.password=cPassword.value;
@@ -60,9 +60,11 @@ function signUpMaster(){
     document.getElementById("form2").reset();
     
     if(stu.className=="bottomL"){
+        boardSession=false;
         loginStudent();
     }
     else{
+        boardSession=false;
         loginMaster();
     }
  }
